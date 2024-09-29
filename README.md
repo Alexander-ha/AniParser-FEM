@@ -6,7 +6,7 @@ Special types realization by discriminated union (Doxygen check).
 This library provides both usage of classic compilation arguments input or interpretation.
 
 >[!NOTE]
->There is a documentation link: [Documentation]([https://pages.github.com/](https://alexander-ha.github.io/AniParser-FEM/))
+>There is a documentation link: [Documentation](https://alexander-ha.github.io/AniParser-FEM/)
 
 ## Classic parser tree workflow: 
 ```c++
