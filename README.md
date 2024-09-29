@@ -4,6 +4,8 @@
 This repository allows developers to create their own flexible model configurations and provides an implementation of the parser architecture for these purposes.
 Special types realization by discriminated union (Doxygen check).
 This library provides both usage of classic compilation arguments input or interpretation.
+[NOTE!]
+There is a documentation link: [GitHub Pages](https://pages.github.com/)
 
 ## Classic parser tree workflow: 
 ```c++
