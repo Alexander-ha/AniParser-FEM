@@ -1,0 +1,299 @@
+\hypertarget{structParamValue}{}\doxysection{Param\+Value Struct Reference}
+\label{structParamValue}\index{ParamValue@{ParamValue}}
+
+
+Implementation of \mbox{\hyperlink{structParamValue}{Param\+Value}} and union -\/ Multivalue.  
+
+
+
+
+{\ttfamily \#include $<$parser\+\_\+tree.\+h$>$}
+
+
+
+Collaboration diagram for Param\+Value\+:
+% FIG 0
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+union \mbox{\hyperlink{unionParamValue_1_1MultiValue}{Multi\+Value}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structParamValue_a374e1772383e7b59fac9e13fed987422}\label{structParamValue_a374e1772383e7b59fac9e13fed987422}} 
+\mbox{\hyperlink{structParamValue_a374e1772383e7b59fac9e13fed987422}{Param\+Value}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{structParamValue}{Param\+Value}} initial constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structParamValue_a60d4b9463fd74a7179e2b10a86b454e7}\label{structParamValue_a60d4b9463fd74a7179e2b10a86b454e7}} 
+\mbox{\hyperlink{structParamValue_a60d4b9463fd74a7179e2b10a86b454e7}{Param\+Value}} (Param\+Type \mbox{\hyperlink{structParamValue_af70d3b448d538aa86375d10adb9dbaa4}{type}}, const void $\ast$\+\_\+value)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{structParamValue}{Param\+Value}} constructors. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structParamValue_a46fbf6c317b8dbbbb6ef499ef8b05e03}\label{structParamValue_a46fbf6c317b8dbbbb6ef499ef8b05e03}} 
+{\bfseries Param\+Value} (Param\+Type \mbox{\hyperlink{structParamValue_af70d3b448d538aa86375d10adb9dbaa4}{type}})
+\item 
+\mbox{\Hypertarget{structParamValue_a3428b23991b3b6971475fa484f01fc80}\label{structParamValue_a3428b23991b3b6971475fa484f01fc80}} 
+{\bfseries Param\+Value} (long \+\_\+value)
+\item 
+\mbox{\Hypertarget{structParamValue_af99283a8d9f71979c37b03a9415d1cf7}\label{structParamValue_af99283a8d9f71979c37b03a9415d1cf7}} 
+{\bfseries Param\+Value} (double \+\_\+value)
+\item 
+\mbox{\Hypertarget{structParamValue_af100b8c515d3fb2ea9791d1e882cd762}\label{structParamValue_af100b8c515d3fb2ea9791d1e882cd762}} 
+{\bfseries Param\+Value} (const std\+::string \&\+\_\+value)
+\item 
+\mbox{\Hypertarget{structParamValue_a0f24e7a9c8a6cd213b8220582c2b5c31}\label{structParamValue_a0f24e7a9c8a6cd213b8220582c2b5c31}} 
+{\bfseries Param\+Value} (bool \+\_\+value)
+\item 
+\mbox{\Hypertarget{structParamValue_a52b9c087419a536b066e9e19f33dcd57}\label{structParamValue_a52b9c087419a536b066e9e19f33dcd57}} 
+{\bfseries Param\+Value} (std\+::vector$<$ long $>$ \+\_\+value)
+\item 
+\mbox{\Hypertarget{structParamValue_a394ce13668acbf8e1d267eb7652a2cae}\label{structParamValue_a394ce13668acbf8e1d267eb7652a2cae}} 
+{\bfseries Param\+Value} (std\+::vector$<$ std\+::string $>$ \+\_\+value)
+\item 
+\mbox{\Hypertarget{structParamValue_a73c1101d0e26b1d298eb7a49014434cd}\label{structParamValue_a73c1101d0e26b1d298eb7a49014434cd}} 
+{\bfseries Param\+Value} (std\+::vector$<$ bool $>$ \+\_\+value)
+\item 
+\mbox{\Hypertarget{structParamValue_afb603d231efaf405b1c56c332fbeecaa}\label{structParamValue_afb603d231efaf405b1c56c332fbeecaa}} 
+{\bfseries Param\+Value} (std\+::vector$<$ double $>$ \+\_\+value)
+\item 
+\mbox{\Hypertarget{structParamValue_ad85f8b91de6db8eabcb796245bb5be4b}\label{structParamValue_ad85f8b91de6db8eabcb796245bb5be4b}} 
+{\bfseries Param\+Value} (const \mbox{\hyperlink{structParamValue}{Param\+Value}} \&other)
+\item 
+\mbox{\Hypertarget{structParamValue_a433d6ef3f2b4e832ad6f8a47238ab228}\label{structParamValue_a433d6ef3f2b4e832ad6f8a47238ab228}} 
+{\bfseries Param\+Value} (\mbox{\hyperlink{structParamValue}{Param\+Value}} \&\&other)
+\item 
+\mbox{\hyperlink{structParamValue}{Param\+Value}} \& \mbox{\hyperlink{structParamValue_aa00268a9fd8622cb05c5836d8d99a60b}{operator=}} (const \mbox{\hyperlink{structParamValue}{Param\+Value}} \&other)
+\item 
+\mbox{\Hypertarget{structParamValue_a6799a0e3016952ecc9eeae49221c6545}\label{structParamValue_a6799a0e3016952ecc9eeae49221c6545}} 
+\mbox{\hyperlink{structParamValue}{Param\+Value}} \& {\bfseries operator=} (\mbox{\hyperlink{structParamValue}{Param\+Value}} \&\&other)
+\item 
+\mbox{\hyperlink{structParamValue}{Param\+Value}} \& \mbox{\hyperlink{structParamValue_a2dbaccf465c925898ee9556429593932}{set}} (long \+\_\+value)
+\item 
+\mbox{\Hypertarget{structParamValue_acd476ac7aea593aac277497c16b8aa97}\label{structParamValue_acd476ac7aea593aac277497c16b8aa97}} 
+\mbox{\hyperlink{structParamValue}{Param\+Value}} \& {\bfseries set} (double \+\_\+value)
+\item 
+\mbox{\Hypertarget{structParamValue_a65b330e6404b69b28c7a7a2a262a19f7}\label{structParamValue_a65b330e6404b69b28c7a7a2a262a19f7}} 
+\mbox{\hyperlink{structParamValue}{Param\+Value}} \& {\bfseries set} (const std\+::string \&\+\_\+value)
+\item 
+\mbox{\Hypertarget{structParamValue_a42f74f3f26b0978daab4648447838d8f}\label{structParamValue_a42f74f3f26b0978daab4648447838d8f}} 
+\mbox{\hyperlink{structParamValue}{Param\+Value}} \& {\bfseries set} (bool \+\_\+value)
+\item 
+\mbox{\Hypertarget{structParamValue_ae33b2260545133690eb73b7babeac70a}\label{structParamValue_ae33b2260545133690eb73b7babeac70a}} 
+\mbox{\hyperlink{structParamValue}{Param\+Value}} \& {\bfseries set} (std\+::vector$<$ long $>$ \+\_\+value)
+\item 
+\mbox{\Hypertarget{structParamValue_a040ecd659980e4de5507ee639a00eeb5}\label{structParamValue_a040ecd659980e4de5507ee639a00eeb5}} 
+\mbox{\hyperlink{structParamValue}{Param\+Value}} \& {\bfseries set} (std\+::vector$<$ std\+::string $>$ \+\_\+value)
+\item 
+\mbox{\Hypertarget{structParamValue_a57babcdc01a959ebdd74396023d95a7f}\label{structParamValue_a57babcdc01a959ebdd74396023d95a7f}} 
+\mbox{\hyperlink{structParamValue}{Param\+Value}} \& {\bfseries set} (std\+::vector$<$ bool $>$ \+\_\+value)
+\item 
+\mbox{\Hypertarget{structParamValue_a248fb4a2ecdaedec4997fb04ff7e52ec}\label{structParamValue_a248fb4a2ecdaedec4997fb04ff7e52ec}} 
+\mbox{\hyperlink{structParamValue}{Param\+Value}} \& {\bfseries set} (std\+::vector$<$ double $>$ \+\_\+value)
+\item 
+long \& \mbox{\hyperlink{structParamValue_a5b71c47b9ef6217b356d44213cd79e01}{Integer}} ()
+\item 
+\mbox{\Hypertarget{structParamValue_a1d0b296c856c1458200c8638b9c16025}\label{structParamValue_a1d0b296c856c1458200c8638b9c16025}} 
+double \& {\bfseries Real} ()
+\item 
+\mbox{\Hypertarget{structParamValue_a1b96355111b6503e6982151be4da7feb}\label{structParamValue_a1b96355111b6503e6982151be4da7feb}} 
+std\+::string \& {\bfseries String} ()
+\item 
+\mbox{\Hypertarget{structParamValue_aa7e4bd83221007f175461eee5ce163bc}\label{structParamValue_aa7e4bd83221007f175461eee5ce163bc}} 
+bool \& {\bfseries Bool} ()
+\item 
+\mbox{\Hypertarget{structParamValue_a1835962dfb7541e9e3a34568b3adb2f2}\label{structParamValue_a1835962dfb7541e9e3a34568b3adb2f2}} 
+std\+::vector$<$ long $>$ \& {\bfseries Int\+Array} ()
+\item 
+\mbox{\Hypertarget{structParamValue_a507107836d56876c5e52fdf9d70d4dfb}\label{structParamValue_a507107836d56876c5e52fdf9d70d4dfb}} 
+std\+::vector$<$ std\+::string $>$ \& {\bfseries String\+Array} ()
+\item 
+\mbox{\Hypertarget{structParamValue_a3776b8827945b2ded6f2a06979db21b2}\label{structParamValue_a3776b8827945b2ded6f2a06979db21b2}} 
+std\+::vector$<$ bool $>$ \& {\bfseries Bool\+Array} ()
+\item 
+\mbox{\Hypertarget{structParamValue_ab0087b100574e2cfc0c62561e04606b4}\label{structParamValue_ab0087b100574e2cfc0c62561e04606b4}} 
+std\+::vector$<$ double $>$ \& {\bfseries Double\+Array} ()
+\item 
+\mbox{\Hypertarget{structParamValue_af62f02137a1f00546829d7bad9da3418}\label{structParamValue_af62f02137a1f00546829d7bad9da3418}} 
+long {\bfseries Integer} () const
+\item 
+\mbox{\Hypertarget{structParamValue_a609f0ae69adf1534751eab8fbba4fcd4}\label{structParamValue_a609f0ae69adf1534751eab8fbba4fcd4}} 
+double {\bfseries Real} () const
+\item 
+\mbox{\Hypertarget{structParamValue_a4a36c8b858f527455fa147b5051f6c05}\label{structParamValue_a4a36c8b858f527455fa147b5051f6c05}} 
+std\+::string {\bfseries String} () const
+\item 
+\mbox{\Hypertarget{structParamValue_a3f2cf42b29f103f86dccb59166ec049c}\label{structParamValue_a3f2cf42b29f103f86dccb59166ec049c}} 
+bool {\bfseries Bool} () const
+\item 
+\mbox{\Hypertarget{structParamValue_ada771647b00d53cd82e12cf9e25b72dc}\label{structParamValue_ada771647b00d53cd82e12cf9e25b72dc}} 
+std\+::vector$<$ long $>$ \& {\bfseries Int\+Array} () const
+\item 
+\mbox{\Hypertarget{structParamValue_acdc75c42464376a340943f817d8555bb}\label{structParamValue_acdc75c42464376a340943f817d8555bb}} 
+std\+::vector$<$ std\+::string $>$ \& {\bfseries String\+Array} () const
+\item 
+\mbox{\Hypertarget{structParamValue_afa7bf61383fabec4a7a15092d95666a3}\label{structParamValue_afa7bf61383fabec4a7a15092d95666a3}} 
+std\+::vector$<$ bool $>$ \& {\bfseries Bool\+Array} () const
+\item 
+\mbox{\Hypertarget{structParamValue_a72de329e07bda6d41696b149666b2d8e}\label{structParamValue_a72de329e07bda6d41696b149666b2d8e}} 
+std\+::vector$<$ double $>$ \& {\bfseries Double\+Array} () const
+\item 
+{\footnotesize template$<$typename T $>$ }\\T \mbox{\hyperlink{structParamValue_a54fa57657d4f2847dea4376692c6527d}{get}} () const
+\item 
+{\footnotesize template$<$typename T $>$ }\\T \& \mbox{\hyperlink{structParamValue_a3730e0a542729c73f5e7c2edcb99aae9}{get}} ()
+\item 
+{\footnotesize template$<$typename T $>$ }\\bool \mbox{\hyperlink{structParamValue_a07ece8a454ce7693b351df4e21df19b7}{get\+\_\+and\+\_\+assign}} (T \&out) const
+\item 
+{\footnotesize template$<$typename T $>$ }\\std\+::pair$<$ T, bool $>$ \mbox{\hyperlink{structParamValue_a96830177e44d596c1d52e08698dd0125}{get\+\_\+if\+\_\+available}} () const
+\item 
+{\footnotesize template$<$typename Base\+Type , typename To\+Type $>$ }\\bool \mbox{\hyperlink{structParamValue_ac03122201466988786d8ffec60cfed84}{assign\+\_\+if\+\_\+available}} (To\+Type \&out) const
+\item 
+std\+::ostream \& \mbox{\hyperlink{structParamValue_acd205103bdec9a19c666a806977c6655}{print\+\_\+paramval}} (std\+::ostream \&out)
+\item 
+\mbox{\hyperlink{structParamValue_a60e9135b2a1b581cf818c3c7087c6819}{$\sim$\+Param\+Value}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structParamValue_a1aa3dfd02cc225db1e160c5b64267c3b}\label{structParamValue_a1aa3dfd02cc225db1e160c5b64267c3b}} 
+static std\+::pair$<$ bool, \mbox{\hyperlink{structParamValue}{Param\+Value}} $>$ {\bfseries make\+\_\+\+Param\+Value\+\_\+from\+\_\+string} (Param\+Type \mbox{\hyperlink{structParamValue_af70d3b448d538aa86375d10adb9dbaa4}{type}}, std\+::string \&str)
+\item 
+static void \mbox{\hyperlink{structParamValue_ac0628df252c2c08f3a81920dd6deca47}{copy\+\_\+value}} (const \mbox{\hyperlink{structParamValue}{Param\+Value}} \&from, void $\ast$out)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structParamValue_af70d3b448d538aa86375d10adb9dbaa4}\label{structParamValue_af70d3b448d538aa86375d10adb9dbaa4}} 
+Param\+Type \mbox{\hyperlink{structParamValue_af70d3b448d538aa86375d10adb9dbaa4}{type}}
+\begin{DoxyCompactList}\small\item\em Type for constructing your value. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structParamValue_a8a4a1656c81871c1514e49241d0257e8}\label{structParamValue_a8a4a1656c81871c1514e49241d0257e8}} 
+\mbox{\hyperlink{unionParamValue_1_1MultiValue}{Multi\+Value}} {\bfseries value}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Implementation of \mbox{\hyperlink{structParamValue}{Param\+Value}} and union -\/ Multivalue. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structParamValue_a60e9135b2a1b581cf818c3c7087c6819}\label{structParamValue_a60e9135b2a1b581cf818c3c7087c6819}} 
+\index{ParamValue@{ParamValue}!````~ParamValue@{$\sim$ParamValue}}
+\index{````~ParamValue@{$\sim$ParamValue}!ParamValue@{ParamValue}}
+\doxysubsubsection{\texorpdfstring{$\sim$ParamValue()}{~ParamValue()}}
+{\footnotesize\ttfamily Param\+Value\+::$\sim$\+Param\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Destructor 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{structParamValue_ac03122201466988786d8ffec60cfed84}\label{structParamValue_ac03122201466988786d8ffec60cfed84}} 
+\index{ParamValue@{ParamValue}!assign\_if\_available@{assign\_if\_available}}
+\index{assign\_if\_available@{assign\_if\_available}!ParamValue@{ParamValue}}
+\doxysubsubsection{\texorpdfstring{assign\_if\_available()}{assign\_if\_available()}}
+{\footnotesize\ttfamily template$<$typename Base\+Type , typename To\+Type $>$ \\
+bool Param\+Value\+::assign\+\_\+if\+\_\+available (\begin{DoxyParamCaption}\item[{To\+Type \&}]{out }\end{DoxyParamCaption}) const}
+
+Get and assign to a different type 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em Base\+Type} & param \\
+\hline
+\mbox{\texttt{ out}}  & {\em To\+Type} & param \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{structParamValue_ac0628df252c2c08f3a81920dd6deca47}\label{structParamValue_ac0628df252c2c08f3a81920dd6deca47}} 
+\index{ParamValue@{ParamValue}!copy\_value@{copy\_value}}
+\index{copy\_value@{copy\_value}!ParamValue@{ParamValue}}
+\doxysubsubsection{\texorpdfstring{copy\_value()}{copy\_value()}}
+{\footnotesize\ttfamily void Param\+Value\+::copy\+\_\+value (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structParamValue}{Param\+Value}} \&}]{from,  }\item[{void $\ast$}]{out }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Copy paramvalue 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em from} & \\
+\hline
+\mbox{\texttt{ out}}  & {\em out} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+The function assume that actual type of the
+\end{DoxyWarning}
+
+\begin{DoxyParams}{Parameters}
+{\em value} & coincide with \mbox{\hyperlink{structParamValue}{Param\+Value}} storage \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{structParamValue_a3730e0a542729c73f5e7c2edcb99aae9}\label{structParamValue_a3730e0a542729c73f5e7c2edcb99aae9}} 
+\index{ParamValue@{ParamValue}!get@{get}}
+\index{get@{get}!ParamValue@{ParamValue}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T \& Param\+Value\+::get}
+
+Getter by modifying val state \mbox{\Hypertarget{structParamValue_a54fa57657d4f2847dea4376692c6527d}\label{structParamValue_a54fa57657d4f2847dea4376692c6527d}} 
+\index{ParamValue@{ParamValue}!get@{get}}
+\index{get@{get}!ParamValue@{ParamValue}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T Param\+Value\+::get}
+
+Getter by copy \mbox{\Hypertarget{structParamValue_a07ece8a454ce7693b351df4e21df19b7}\label{structParamValue_a07ece8a454ce7693b351df4e21df19b7}} 
+\index{ParamValue@{ParamValue}!get\_and\_assign@{get\_and\_assign}}
+\index{get\_and\_assign@{get\_and\_assign}!ParamValue@{ParamValue}}
+\doxysubsubsection{\texorpdfstring{get\_and\_assign()}{get\_and\_assign()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+bool Param\+Value\+::get\+\_\+and\+\_\+assign (\begin{DoxyParamCaption}\item[{T \&}]{out }\end{DoxyParamCaption}) const}
+
+Retreive value and assign it, check success 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ out}}  & {\em out} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{structParamValue_a96830177e44d596c1d52e08698dd0125}\label{structParamValue_a96830177e44d596c1d52e08698dd0125}} 
+\index{ParamValue@{ParamValue}!get\_if\_available@{get\_if\_available}}
+\index{get\_if\_available@{get\_if\_available}!ParamValue@{ParamValue}}
+\doxysubsubsection{\texorpdfstring{get\_if\_available()}{get\_if\_available()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+std\+::pair$<$ T, bool $>$ Param\+Value\+::get\+\_\+if\+\_\+available}
+
+Retreive value and check availability 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em (\+Type,val)} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{structParamValue_a5b71c47b9ef6217b356d44213cd79e01}\label{structParamValue_a5b71c47b9ef6217b356d44213cd79e01}} 
+\index{ParamValue@{ParamValue}!Integer@{Integer}}
+\index{Integer@{Integer}!ParamValue@{ParamValue}}
+\doxysubsubsection{\texorpdfstring{Integer()}{Integer()}}
+{\footnotesize\ttfamily long \& Param\+Value\+::\+Integer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Getter example \mbox{\Hypertarget{structParamValue_aa00268a9fd8622cb05c5836d8d99a60b}\label{structParamValue_aa00268a9fd8622cb05c5836d8d99a60b}} 
+\index{ParamValue@{ParamValue}!operator=@{operator=}}
+\index{operator=@{operator=}!ParamValue@{ParamValue}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structParamValue}{Param\+Value}} \& Param\+Value\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structParamValue}{Param\+Value}} \&}]{other }\end{DoxyParamCaption})}
+
+Assignment operator \mbox{\Hypertarget{structParamValue_acd205103bdec9a19c666a806977c6655}\label{structParamValue_acd205103bdec9a19c666a806977c6655}} 
+\index{ParamValue@{ParamValue}!print\_paramval@{print\_paramval}}
+\index{print\_paramval@{print\_paramval}!ParamValue@{ParamValue}}
+\doxysubsubsection{\texorpdfstring{print\_paramval()}{print\_paramval()}}
+{\footnotesize\ttfamily std\+::ostream \& Param\+Value\+::print\+\_\+paramval (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{out }\end{DoxyParamCaption})}
+
+Print paramvalue 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em from} & \\
+\hline
+\mbox{\texttt{ out}}  & {\em out} & Example\+: 
+\begin{DoxyCode}{1}
+\DoxyCodeLine{parent-\/>children[i]-\/>stored\_object.print\_paramval(std::cout);}
+\DoxyCodeLine{std::cout << std::endl;}
+
+\end{DoxyCode}
+ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{structParamValue_a2dbaccf465c925898ee9556429593932}\label{structParamValue_a2dbaccf465c925898ee9556429593932}} 
+\index{ParamValue@{ParamValue}!set@{set}}
+\index{set@{set}!ParamValue@{ParamValue}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structParamValue}{Param\+Value}} \& Param\+Value\+::set (\begin{DoxyParamCaption}\item[{long}]{\+\_\+value }\end{DoxyParamCaption})}
+
+Setter example 
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+parser\+\_\+tree.\+h\item 
+parser\+\_\+tree.\+cpp\end{DoxyCompactItemize}

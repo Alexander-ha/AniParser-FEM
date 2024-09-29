@@ -1,0 +1,109 @@
+\hypertarget{classInterpreter}{}\doxysection{Interpreter Class Reference}
+\label{classInterpreter}\index{Interpreter@{Interpreter}}
+
+
+\mbox{\hyperlink{classInterpreter}{Interpreter}} module.  
+
+
+
+
+{\ttfamily \#include $<$interpreter.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{classInterpreter_a1f08a3015ad4809610b871803df9e7ef}{get\+Commands}} () const
+\item 
+std\+::string \mbox{\hyperlink{classInterpreter_a0c155ce844c7d933e2760806504b69aa}{get\+Command\+String}} () const
+\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{classInterpreter_a52dfc4a08934fe0f45983173d5f724ca}{get\+Argv}} () const
+\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{classInterpreter_a22aabaee9b7687707fc48781c30791ee}{get\+String\+Args}} () const
+\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{classInterpreter_a269730220b5e9ce000ebe3063b4c3e17}{split\+String}} (const std\+::string \&str) const
+\item 
+std\+::string \mbox{\hyperlink{classInterpreter_aca82441ebd01003f4ca7aaa57817a93c}{join\+Strings}} (const std\+::vector$<$ std\+::string $>$ \&input) const
+\item 
+\mbox{\Hypertarget{classInterpreter_aa03f04b0bc86cccec2394eebd57e7740}\label{classInterpreter_aa03f04b0bc86cccec2394eebd57e7740}} 
+size\+\_\+t {\bfseries size} () const
+\item 
+\mbox{\Hypertarget{classInterpreter_afc8ca6c913b29fb7b04cf80ee0119148}\label{classInterpreter_afc8ca6c913b29fb7b04cf80ee0119148}} 
+void {\bfseries clear} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classInterpreter_a1cc53f85d59a84282a916e8507b3f52c}\label{classInterpreter_a1cc53f85d59a84282a916e8507b3f52c}} 
+std\+::vector$<$ std\+::string $>$ {\bfseries command\+Buffer}
+\item 
+\mbox{\Hypertarget{classInterpreter_ac64529f50d28b893cc7a54f907c3de2f}\label{classInterpreter_ac64529f50d28b893cc7a54f907c3de2f}} 
+std\+::vector$<$ std\+::string $>$ {\bfseries argv}
+\item 
+\mbox{\Hypertarget{classInterpreter_afab26e2c73b7bb925a1a7bd92456365e}\label{classInterpreter_afab26e2c73b7bb925a1a7bd92456365e}} 
+size\+\_\+t {\bfseries argc}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classInterpreter}{Interpreter}} module. 
+
+Simply instantinate \mbox{\hyperlink{classInterpreter}{Interpreter}} from this header to connect this module to your code 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classInterpreter_a52dfc4a08934fe0f45983173d5f724ca}\label{classInterpreter_a52dfc4a08934fe0f45983173d5f724ca}} 
+\index{Interpreter@{Interpreter}!getArgv@{getArgv}}
+\index{getArgv@{getArgv}!Interpreter@{Interpreter}}
+\doxysubsubsection{\texorpdfstring{getArgv()}{getArgv()}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::string$>$ Interpreter\+::get\+Argv (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Getter \mbox{\Hypertarget{classInterpreter_a1f08a3015ad4809610b871803df9e7ef}\label{classInterpreter_a1f08a3015ad4809610b871803df9e7ef}} 
+\index{Interpreter@{Interpreter}!getCommands@{getCommands}}
+\index{getCommands@{getCommands}!Interpreter@{Interpreter}}
+\doxysubsubsection{\texorpdfstring{getCommands()}{getCommands()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::string $>$ Interpreter\+::get\+Commands (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Getter of commands in vector of strings \mbox{\Hypertarget{classInterpreter_a0c155ce844c7d933e2760806504b69aa}\label{classInterpreter_a0c155ce844c7d933e2760806504b69aa}} 
+\index{Interpreter@{Interpreter}!getCommandString@{getCommandString}}
+\index{getCommandString@{getCommandString}!Interpreter@{Interpreter}}
+\doxysubsubsection{\texorpdfstring{getCommandString()}{getCommandString()}}
+{\footnotesize\ttfamily std\+::string Interpreter\+::get\+Command\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Getter of command string \mbox{\Hypertarget{classInterpreter_a22aabaee9b7687707fc48781c30791ee}\label{classInterpreter_a22aabaee9b7687707fc48781c30791ee}} 
+\index{Interpreter@{Interpreter}!getStringArgs@{getStringArgs}}
+\index{getStringArgs@{getStringArgs}!Interpreter@{Interpreter}}
+\doxysubsubsection{\texorpdfstring{getStringArgs()}{getStringArgs()}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::string$>$ Interpreter\+::get\+String\+Args (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Getter \mbox{\Hypertarget{classInterpreter_aca82441ebd01003f4ca7aaa57817a93c}\label{classInterpreter_aca82441ebd01003f4ca7aaa57817a93c}} 
+\index{Interpreter@{Interpreter}!joinStrings@{joinStrings}}
+\index{joinStrings@{joinStrings}!Interpreter@{Interpreter}}
+\doxysubsubsection{\texorpdfstring{joinStrings()}{joinStrings()}}
+{\footnotesize\ttfamily std\+::string Interpreter\+::join\+Strings (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::string $>$ \&}]{input }\end{DoxyParamCaption}) const}
+
+Join string ~\newline
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ out}}  & {\em str} & const std\+::string\& \\
+\hline
+\mbox{\texttt{ in}}  & {\em vector} & const std\+::vector$<$std\+::string$>$ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classInterpreter_a269730220b5e9ce000ebe3063b4c3e17}\label{classInterpreter_a269730220b5e9ce000ebe3063b4c3e17}} 
+\index{Interpreter@{Interpreter}!splitString@{splitString}}
+\index{splitString@{splitString}!Interpreter@{Interpreter}}
+\doxysubsubsection{\texorpdfstring{splitString()}{splitString()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::string $>$ Interpreter\+::split\+String (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{str }\end{DoxyParamCaption}) const}
+
+Split string 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em str} & const std\+::string\& \\
+\hline
+\mbox{\texttt{ out}}  & {\em vector} & const std\+::vector$<$std\+::string$>$ \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+interpreter.\+h\item 
+interpreter.\+cpp\end{DoxyCompactItemize}

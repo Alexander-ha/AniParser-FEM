@@ -1,0 +1,7 @@
+Debug/
+.vscode/
+build/
+cmake-build-Debug/
+cmake-build-Release/
+parser_release/
+CMakeLists.txt

@@ -1,0 +1,71 @@
+\hypertarget{structNode}{}\doxysection{Node Struct Reference}
+\label{structNode}\index{Node@{Node}}
+
+
+Collaboration diagram for Node\+:
+% FIG 0
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structNode_af9f19073cb65f589c8383ccdf65b567d}\label{structNode_af9f19073cb65f589c8383ccdf65b567d}} 
+using {\bfseries Set\+Func} = std\+::function$<$ bool(const \mbox{\hyperlink{structParamValue}{Param\+Value}} \&value)$>$
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structNode_a0c5b662d3bfbb856292a9aab878ed622}\label{structNode_a0c5b662d3bfbb856292a9aab878ed622}} 
+bool {\bfseries is\+Leaf} () const
+\item 
+\mbox{\Hypertarget{structNode_a091661e5609ef1b80159fa82ac9f92dc}\label{structNode_a091661e5609ef1b80159fa82ac9f92dc}} 
+bool {\bfseries is\+Value} () const
+\item 
+\mbox{\Hypertarget{structNode_a62723e2f3bf482f8264d33fe7582065d}\label{structNode_a62723e2f3bf482f8264d33fe7582065d}} 
+bool {\bfseries have\+Ref\+Object} () const
+\item 
+\mbox{\Hypertarget{structNode_a2059e4028a1d31eddd58d666d491838d}\label{structNode_a2059e4028a1d31eddd58d666d491838d}} 
+{\bfseries Node} (const std\+::string \&field\+Name, Param\+Type param\+Type, void $\ast$obj, Set\+Func set\+\_\+\+Func=nullptr)
+\item 
+\mbox{\Hypertarget{structNode_aeef212ef3e9f65a9c0951f40f2da48c0}\label{structNode_aeef212ef3e9f65a9c0951f40f2da48c0}} 
+{\bfseries Node} (const std\+::string \&field\+Name, void $\ast$obj)
+\item 
+\mbox{\Hypertarget{structNode_ae0b5f21079952f51d8820c88f9075f71}\label{structNode_ae0b5f21079952f51d8820c88f9075f71}} 
+{\bfseries Node} (const std\+::string \&field\+Name, Param\+Type param\+Type, std\+::string default\+\_\+value)
+\item 
+\mbox{\Hypertarget{structNode_a694fa7ab3f53952e9b763c5dd2564ca9}\label{structNode_a694fa7ab3f53952e9b763c5dd2564ca9}} 
+{\bfseries Node} (const std\+::string \&field\+Name, void $\ast$obj, Param\+Type param\+Type)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structNode_aa829edc37a2c92dacdab95bcef248175}\label{structNode_aa829edc37a2c92dacdab95bcef248175}} 
+std\+::string {\bfseries name}
+\item 
+\mbox{\Hypertarget{structNode_a40334dc4f0ef1a8b87015f381a822c84}\label{structNode_a40334dc4f0ef1a8b87015f381a822c84}} 
+Param\+Type {\bfseries type}
+\item 
+\mbox{\Hypertarget{structNode_af47190696f4bf50bf66c6dced73c609a}\label{structNode_af47190696f4bf50bf66c6dced73c609a}} 
+\mbox{\hyperlink{structParamValue}{Param\+Value}} {\bfseries stored\+\_\+object}
+\item 
+\mbox{\Hypertarget{structNode_a387788ba1e23095467f57f6b7db44079}\label{structNode_a387788ba1e23095467f57f6b7db44079}} 
+std\+::string {\bfseries description}
+\item 
+\mbox{\Hypertarget{structNode_a9cf70c2b354e11c49130331da4519864}\label{structNode_a9cf70c2b354e11c49130331da4519864}} 
+void $\ast$ {\bfseries object} = nullptr
+\item 
+\mbox{\Hypertarget{structNode_a25cc9442ff1aee14388c01e802213a01}\label{structNode_a25cc9442ff1aee14388c01e802213a01}} 
+Set\+Func {\bfseries set\+\_\+func} = nullptr
+\item 
+\mbox{\Hypertarget{structNode_af4151d058a35205d2ccf23f26dad8d0c}\label{structNode_af4151d058a35205d2ccf23f26dad8d0c}} 
+std\+::string {\bfseries init\+\_\+str}
+\item 
+\mbox{\Hypertarget{structNode_a44f29c4de616705e4f8405e80d869825}\label{structNode_a44f29c4de616705e4f8405e80d869825}} 
+std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structNode}{Node}} $>$ $>$ {\bfseries children}
+\item 
+\mbox{\Hypertarget{structNode_ad8184598cdea70e4bbdfd76f2b0f9e85}\label{structNode_ad8184598cdea70e4bbdfd76f2b0f9e85}} 
+\mbox{\hyperlink{structNode}{Node}} $\ast$ {\bfseries parent}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+parser\+\_\+tree.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,165 @@
+\hypertarget{classParserTree}{}\doxysection{Parser\+Tree Class Reference}
+\label{classParserTree}\index{ParserTree@{ParserTree}}
+
+
+Parser tree class.  
+
+
+
+
+{\ttfamily \#include $<$parser\+\_\+tree.\+h$>$}
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structParserTree_1_1Node}{Node}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classParserTree_a246734dbea0d3dcd019310f3030b42a5}\label{classParserTree_a246734dbea0d3dcd019310f3030b42a5}} 
+{\bfseries Parser\+Tree} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]}, bool print\+\_\+messages)
+\item 
+void \mbox{\hyperlink{classParserTree_af0fbdd6cc4d56ac2ce7a5d713e66ac02}{read\+Params\+From\+Cmd\+Line}} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]}, bool print\+\_\+messages)
+\item 
+void \mbox{\hyperlink{classParserTree_a262dd63776b469411ec0cdd23a85a4ec}{read\+Params\+From\+Cmd\+Line}} (const std\+::vector$<$ std\+::string $>$ \&argv, bool print\+\_\+messages)
+\item 
+void \mbox{\hyperlink{classParserTree_a18f379a54940c24d83e8d270d51911a4}{print\+Tree}} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structParserTree_1_1Node}{Node}} $>$ \&node, const std\+::string \&prefix=\char`\"{}\char`\"{})
+\item 
+void \mbox{\hyperlink{classParserTree_aa05ff971dc49fce854d0093afcc287f0}{print}} ()
+\item 
+void \mbox{\hyperlink{classParserTree_a35ca77e5dc859c145cea1918f038a793}{set}} (const std\+::string \&field\+Name, void $\ast$obj, Get\+Arg\+Descr\+Func get\+Func, \mbox{\hyperlink{structArgDescr_a8fffa6980168c1e1a14c298f9ef99b2e}{Arg\+Descr\+::\+Set\+Value\+Func}} set\+Func, const std\+::string \&description=\char`\"{}\char`\"{})
+\item 
+void \mbox{\hyperlink{classParserTree_a427fd0f208b8010d2a542e5117dec2d0}{set}} (const std\+::string \&field\+Name, void $\ast$obj, Param\+Type t, const std\+::string \&description)
+\item 
+void \mbox{\hyperlink{classParserTree_aec2391a99db6a3596a00cab1e3bd1e4a}{set}} (const std\+::string \&field\+Name, const std\+::string \&default\+\_\+value, Param\+Type t, const std\+::string \&description)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classParserTree_a087f533400aceec83474555e18b1993f}\label{classParserTree_a087f533400aceec83474555e18b1993f}} 
+std\+::map$<$ std\+::string, \mbox{\hyperlink{structParserTree_1_1Node}{Node}} $\ast$ $>$ {\bfseries vertex\+Map}
+\item 
+\mbox{\Hypertarget{classParserTree_a6b9f27c5bf8f12f3d8af6ac19a80ee65}\label{classParserTree_a6b9f27c5bf8f12f3d8af6ac19a80ee65}} 
+std\+::map$<$ std\+::pair$<$ std\+::string, std\+::string $>$, std\+::vector$<$ std\+::string $>$ $>$ {\bfseries adj\+List}
+\item 
+\mbox{\Hypertarget{classParserTree_a90e64cd565a6e422657ba17d25b5bae5}\label{classParserTree_a90e64cd565a6e422657ba17d25b5bae5}} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structParserTree_1_1Node}{Node}} $>$ \mbox{\hyperlink{classParserTree_a90e64cd565a6e422657ba17d25b5bae5}{root}}
+\begin{DoxyCompactList}\small\item\em Root of the tree. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Parser tree class. 
+
+Parser tree implementation consists of class \mbox{\hyperlink{structParserTree_1_1Node}{Node}} 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classParserTree_aa05ff971dc49fce854d0093afcc287f0}\label{classParserTree_aa05ff971dc49fce854d0093afcc287f0}} 
+\index{ParserTree@{ParserTree}!print@{print}}
+\index{print@{print}!ParserTree@{ParserTree}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily void Parser\+Tree\+::print (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Call print\+Tree. \mbox{\Hypertarget{classParserTree_a18f379a54940c24d83e8d270d51911a4}\label{classParserTree_a18f379a54940c24d83e8d270d51911a4}} 
+\index{ParserTree@{ParserTree}!printTree@{printTree}}
+\index{printTree@{printTree}!ParserTree@{ParserTree}}
+\doxysubsubsection{\texorpdfstring{printTree()}{printTree()}}
+{\footnotesize\ttfamily void Parser\+Tree\+::print\+Tree (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structParserTree_1_1Node}{Node}} $>$ \&}]{node,  }\item[{const std\+::string \&}]{prefix = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
+
+Print tree to the ouput 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em node} & -\/ start node \\
+\hline
+\mbox{\texttt{ in}}  & {\em prefix} & -\/ using prefix for print \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classParserTree_a262dd63776b469411ec0cdd23a85a4ec}\label{classParserTree_a262dd63776b469411ec0cdd23a85a4ec}} 
+\index{ParserTree@{ParserTree}!readParamsFromCmdLine@{readParamsFromCmdLine}}
+\index{readParamsFromCmdLine@{readParamsFromCmdLine}!ParserTree@{ParserTree}}
+\doxysubsubsection{\texorpdfstring{readParamsFromCmdLine()}{readParamsFromCmdLine()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Parser\+Tree\+::read\+Params\+From\+Cmd\+Line (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::string $>$ \&}]{argv,  }\item[{bool}]{print\+\_\+messages }\end{DoxyParamCaption})}
+
+\begin{DoxyWarning}{Warning}
+This is an \mbox{\hyperlink{classInterpreter}{Interpreter}} implementation Read params from command line 
+\end{DoxyWarning}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em arv} & -\/ vector of strings, often -\/ interpreter output \\
+\hline
+\mbox{\texttt{ in}}  & {\em print\+\_\+messages} & -\/ bool to display or not messages \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classParserTree_af0fbdd6cc4d56ac2ce7a5d713e66ac02}\label{classParserTree_af0fbdd6cc4d56ac2ce7a5d713e66ac02}} 
+\index{ParserTree@{ParserTree}!readParamsFromCmdLine@{readParamsFromCmdLine}}
+\index{readParamsFromCmdLine@{readParamsFromCmdLine}!ParserTree@{ParserTree}}
+\doxysubsubsection{\texorpdfstring{readParamsFromCmdLine()}{readParamsFromCmdLine()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Parser\+Tree\+::read\+Params\+From\+Cmd\+Line (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]},  }\item[{bool}]{print\+\_\+messages }\end{DoxyParamCaption})}
+
+Read params from command line 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em arc} & -\/ size of argv \\
+\hline
+\mbox{\texttt{ in}}  & {\em argv\mbox{[}$\,$\mbox{]}} & -\/ array of char pointers to args \\
+\hline
+\mbox{\texttt{ in}}  & {\em print\+\_\+messages} & -\/ bool to display or not messages \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classParserTree_aec2391a99db6a3596a00cab1e3bd1e4a}\label{classParserTree_aec2391a99db6a3596a00cab1e3bd1e4a}} 
+\index{ParserTree@{ParserTree}!set@{set}}
+\index{set@{set}!ParserTree@{ParserTree}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily void Parser\+Tree\+::set (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{field\+Name,  }\item[{const std\+::string \&}]{default\+\_\+value,  }\item[{Param\+Type}]{t,  }\item[{const std\+::string \&}]{description }\end{DoxyParamCaption})}
+
+Set leaf by value string 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em field\+Name} & -\/ value name \\
+\hline
+\mbox{\texttt{ in}}  & {\em default\+\_\+value} & -\/ value \\
+\hline
+\mbox{\texttt{ in}}  & {\em t} & -\/ Param\+Type definition \\
+\hline
+\mbox{\texttt{ in}}  & {\em description} & -\/ initial description \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classParserTree_a35ca77e5dc859c145cea1918f038a793}\label{classParserTree_a35ca77e5dc859c145cea1918f038a793}} 
+\index{ParserTree@{ParserTree}!set@{set}}
+\index{set@{set}!ParserTree@{ParserTree}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily void Parser\+Tree\+::set (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{field\+Name,  }\item[{void $\ast$}]{obj,  }\item[{Get\+Arg\+Descr\+Func}]{get\+Func,  }\item[{\mbox{\hyperlink{structArgDescr_a8fffa6980168c1e1a14c298f9ef99b2e}{Arg\+Descr\+::\+Set\+Value\+Func}}}]{set\+Func,  }\item[{const std\+::string \&}]{description = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
+
+Set branch by model 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em field\+Name} & -\/ name of model or any other constructions \\
+\hline
+\mbox{\texttt{ in}}  & {\em obj} & -\/ current object of model or anything else \\
+\hline
+\mbox{\texttt{ in}}  & {\em set\+Func} & -\/ Setter func \mbox{\hyperlink{structArgDescr}{Arg\+Descr}} \\
+\hline
+\mbox{\texttt{ in}}  & {\em get\+Func} & -\/ Getter func \mbox{\hyperlink{structArgDescr}{Arg\+Descr}} \\
+\hline
+\mbox{\texttt{ in}}  & {\em description} & -\/ initial description \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classParserTree_a427fd0f208b8010d2a542e5117dec2d0}\label{classParserTree_a427fd0f208b8010d2a542e5117dec2d0}} 
+\index{ParserTree@{ParserTree}!set@{set}}
+\index{set@{set}!ParserTree@{ParserTree}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily void Parser\+Tree\+::set (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{field\+Name,  }\item[{void $\ast$}]{obj,  }\item[{Param\+Type}]{t,  }\item[{const std\+::string \&}]{description }\end{DoxyParamCaption})}
+
+Set branch by certain paramtype 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em field\+Name} & -\/ name of model or any other constructions \\
+\hline
+\mbox{\texttt{ in}}  & {\em obj} & -\/ current object of model or anything else \\
+\hline
+\mbox{\texttt{ in}}  & {\em t} & -\/ Param\+Type definition \\
+\hline
+\mbox{\texttt{ in}}  & {\em description} & -\/ initial description \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+parser\+\_\+tree.\+h\item 
+parser\+\_\+tree.\+cpp\end{DoxyCompactItemize}

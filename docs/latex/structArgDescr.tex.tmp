@@ -1,0 +1,65 @@
+\hypertarget{structArgDescr}{}\doxysection{Arg\+Descr Struct Reference}
+\label{structArgDescr}\index{ArgDescr@{ArgDescr}}
+
+
+Main struct to describe your arguments.  
+
+
+
+
+{\ttfamily \#include $<$parser\+\_\+tree.\+h$>$}
+
+
+
+Collaboration diagram for Arg\+Descr\+:
+% FIG 0
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structArgDescr_a8fffa6980168c1e1a14c298f9ef99b2e}\label{structArgDescr_a8fffa6980168c1e1a14c298f9ef99b2e}} 
+using \mbox{\hyperlink{structArgDescr_a8fffa6980168c1e1a14c298f9ef99b2e}{Set\+Value\+Func}} = std\+::function$<$ bool(void $\ast$, int, const \mbox{\hyperlink{structParamValue}{Param\+Value}} \&)$>$
+\begin{DoxyCompactList}\small\item\em Initial setter. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structArgDescr_a8ec3d885236fc1098bf2aaf0f755526f}\label{structArgDescr_a8ec3d885236fc1098bf2aaf0f755526f}} 
+bool \mbox{\hyperlink{structArgDescr_a8ec3d885236fc1098bf2aaf0f755526f}{is\+Value}} () const
+\begin{DoxyCompactList}\small\item\em Method to check if its valure or nested object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structArgDescr_aae45c9f4ba46d0635bb1b36e78ed9c6c}\label{structArgDescr_aae45c9f4ba46d0635bb1b36e78ed9c6c}} 
+\mbox{\hyperlink{structArgDescr_aae45c9f4ba46d0635bb1b36e78ed9c6c}{Arg\+Descr}} ()=default
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structArgDescr_afc5b3268c5ad582e2f69893bfa483e41}\label{structArgDescr_afc5b3268c5ad582e2f69893bfa483e41}} 
+{\bfseries Arg\+Descr} (int \mbox{\hyperlink{structArgDescr_abb899776224348cae6c815103d81ec19}{id}}, std\+::string \mbox{\hyperlink{structArgDescr_aa67eb2027721b336e52167af33776d0f}{param\+Name}}, \mbox{\hyperlink{structParamValue}{Param\+Value}} \mbox{\hyperlink{structArgDescr_ac9eb4e4a508c8cbf8f7691aed6d90bfb}{param\+Value}}, std\+::string \mbox{\hyperlink{structArgDescr_af6d857698cc2a89d6dbadff0390bec68}{description}}, void $\ast$\mbox{\hyperlink{structArgDescr_acd35e97363462ab00a3d8ea541a2491d}{nested\+\_\+object}}=nullptr, std\+::function$<$ std\+::vector$<$ \mbox{\hyperlink{structArgDescr}{Arg\+Descr}} $>$(void $\ast$nested\+\_\+obj)$>$ \mbox{\hyperlink{structArgDescr_a454bfac11af76366bfbe3b8ebbcd6624}{get\+Arg\+Descr}}=nullptr, std\+::function$<$ bool(void $\ast$, int, const \mbox{\hyperlink{structParamValue}{Param\+Value}} \&)$>$ \mbox{\hyperlink{structArgDescr_a7356cb3cc78e53e720d08c082714879c}{set\+Value}}=nullptr)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structArgDescr_abb899776224348cae6c815103d81ec19}\label{structArgDescr_abb899776224348cae6c815103d81ec19}} 
+int \mbox{\hyperlink{structArgDescr_abb899776224348cae6c815103d81ec19}{id}}
+\begin{DoxyCompactList}\small\item\em Parameter id. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structArgDescr_aa67eb2027721b336e52167af33776d0f}\label{structArgDescr_aa67eb2027721b336e52167af33776d0f}} 
+std\+::string \mbox{\hyperlink{structArgDescr_aa67eb2027721b336e52167af33776d0f}{param\+Name}}
+\begin{DoxyCompactList}\small\item\em Parameter name. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structArgDescr_ac9eb4e4a508c8cbf8f7691aed6d90bfb}\label{structArgDescr_ac9eb4e4a508c8cbf8f7691aed6d90bfb}} 
+\mbox{\hyperlink{structParamValue}{Param\+Value}} \mbox{\hyperlink{structArgDescr_ac9eb4e4a508c8cbf8f7691aed6d90bfb}{param\+Value}}
+\begin{DoxyCompactList}\small\item\em Parameter value. Type -\/ Param\+Type\+:\+: \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structArgDescr_af6d857698cc2a89d6dbadff0390bec68}\label{structArgDescr_af6d857698cc2a89d6dbadff0390bec68}} 
+std\+::string \mbox{\hyperlink{structArgDescr_af6d857698cc2a89d6dbadff0390bec68}{description}}
+\begin{DoxyCompactList}\small\item\em Parameter description. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structArgDescr_acd35e97363462ab00a3d8ea541a2491d}\label{structArgDescr_acd35e97363462ab00a3d8ea541a2491d}} 
+void $\ast$ \mbox{\hyperlink{structArgDescr_acd35e97363462ab00a3d8ea541a2491d}{nested\+\_\+object}} = nullptr
+\begin{DoxyCompactList}\small\item\em Nested group or object pointer. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structArgDescr_a454bfac11af76366bfbe3b8ebbcd6624}\label{structArgDescr_a454bfac11af76366bfbe3b8ebbcd6624}} 
+std\+::function$<$ std\+::vector$<$ \mbox{\hyperlink{structArgDescr}{Arg\+Descr}} $>$void $\ast$nested\+\_\+obj)$>$ \mbox{\hyperlink{structArgDescr_a454bfac11af76366bfbe3b8ebbcd6624}{get\+Arg\+Descr}} = nullptr
+\begin{DoxyCompactList}\small\item\em Getter arg descr. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structArgDescr_a7356cb3cc78e53e720d08c082714879c}\label{structArgDescr_a7356cb3cc78e53e720d08c082714879c}} 
+std\+::function$<$ bool(void $\ast$, int, const \mbox{\hyperlink{structParamValue}{Param\+Value}} \&)$>$ \mbox{\hyperlink{structArgDescr_a7356cb3cc78e53e720d08c082714879c}{set\+Value}} = nullptr
+\begin{DoxyCompactList}\small\item\em Setter arg descr. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Main struct to describe your arguments. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+parser\+\_\+tree.\+h\end{DoxyCompactItemize}
