@@ -4,8 +4,9 @@
 This repository allows developers to create their own flexible model configurations and provides an implementation of the parser architecture for these purposes.
 Special types realization by discriminated union (Doxygen check).
 This library provides both usage of classic compilation arguments input or interpretation.
-[!NOTE]
-There is a documentation link: [Documentation](https://pages.github.com/)
+
+>[!NOTE]
+>There is a documentation link: [Documentation](https://pages.github.com/)
 
 ## Classic parser tree workflow: 
 ```c++
@@ -126,8 +127,8 @@ Entering CLI mode. Type 'cli(off)' to exit:
 cli(off)
 Exiting CLI mode.
 ```
-[!NOTE]
-Current version of parser provides a few service commands such as:
+>[!NOTE]
+>Current version of parser provides a few service commands such as:
 ```bash
 --help|-h - help command, displays type and description
 ```
