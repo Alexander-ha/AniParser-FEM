@@ -154,7 +154,8 @@ For additional help use --help|-h.
 ```
 _________________________________________________________________________________
 ## Additional documentation:
-🟦: Doxygen docs: docs/html|latex \\
+🟦: Doxygen docs: docs/html|latex 
+
 🟥: How to create model tutorial: docs/HowToCreateModel.md
 _________________________________________________________________________________
 Contact me here or via Telegram|Gmail:
