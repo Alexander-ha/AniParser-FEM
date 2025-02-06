@@ -390,7 +390,6 @@ void ParserTree::readParamsFromCmdLine(int argc, char* argv[], bool print_messag
         for (int i = 1; i < argc; ++i) {
             const std::string prefix = "path:";
             std::string currentArg = argv[i];
-            std::cout << "The model is model" << argv[i] << std::endl;
             if (strcmp(argv[i], "--help") == 0 || strcmp(argv[i], "-h") == 0){
                 print_help(*this);
                 std::cout<<"For additional help use --help|-h. \n To use the interpreter mode, enter: cli(on), \n if you have it connected, \n cli(off) to turn it off. \n  --version|-v to get current version"<<std::endl;
