@@ -396,7 +396,7 @@ void ParserTree::readParamsFromCmdLine(int argc, char* argv[], bool print_messag
                 return;
             }
             if (strcmp(argv[i], "--version") == 0 || strcmp(argv[i], "-v") == 0){
-                std::cout << "\nParser version: 0.0.1 \n" << std::endl;
+                std::cout << "\nParser version: 0.1.1 \n" << std::endl;
                 if (!root->name.empty()){
                     std::cout << "Current program name is: " << root->name <<std::endl;
                 }
