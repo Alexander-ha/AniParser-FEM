@@ -419,6 +419,7 @@ public:
 
     std::map<std::string, Node*> vertexMap;
     std::map<std::pair<std::string, std::string>, std::vector<std::string>> adjList;
+    bool verbose = false;
 
 public:
     /**
