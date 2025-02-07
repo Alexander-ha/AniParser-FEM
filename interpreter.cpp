@@ -31,7 +31,7 @@ void Interpreter::processInput() {
             running = true;
             cliInterpreter();
         } else {
-            std::cout << "Executing argument: " << command << std::endl;
+            if (this->verbose) std::cout << "Executing argument: " << command << std::endl;
         }
     }
 }
