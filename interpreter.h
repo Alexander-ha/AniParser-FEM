@@ -48,6 +48,8 @@ class Interpreter {
         */
         std::string joinStrings(const std::vector<std::string>& input) const;
 
+        bool verbose = false;
+
         /*Get size of commanbuffer*/
         size_t size() const { return commandBuffer.size(); }
         /*Clear commanbuffer*/
