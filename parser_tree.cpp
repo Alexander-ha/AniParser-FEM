@@ -540,17 +540,17 @@ void ParserTree::descentDefine(Node* parent, const std::string& path, const std:
             }
             auto val = ParamValue::make_ParamValue_from_string(current_parent->type, dest_arg);
             if (val.first && current_parent->set_func != nullptr) {
-                std::cout<<"Setting stored value in"<<" "<<current_parent->name<<": "<<std::endl;
+                if (this->verbose) std::cout<<"Setting stored value in"<<" "<<current_parent->name<<": "<<std::endl;
                 current_parent->set_func(val.second);
                 current_parent->stored_object = val.second;
-                current_parent->stored_object.print_paramval(std::cout);
-                std::cout << std::endl;
+                if (this->verbose) current_parent->stored_object.print_paramval(std::cout);
+                if (this->verbose) std::cout << std::endl;
                 }
             else if(val.first){
-                std::cout<<"Setting stored value in"<<" "<<current_parent->name<<": "<<std::endl;
+                if (this->verbose) std::cout<<"Setting stored value in"<<" "<<current_parent->name<<": "<<std::endl;
                 current_parent->stored_object = val.second;
-                current_parent->stored_object.print_paramval(std::cout);
-                std::cout << std::endl;
+                if (this->verbose) current_parent->stored_object.print_paramval(std::cout);
+                if (this->verbose) std::cout << std::endl;
             }
         }
 
@@ -575,11 +575,11 @@ void ParserTree::descentDefine(Node* parent, const std::string& path, const std:
             std::string dest_arg = arg;
             auto val = ParamValue::make_ParamValue_from_string(current_parent->type, dest_arg);
             if (val.first && current_parent->set_func != nullptr) {
-                std::cout<<"Setting stored value in"<<" "<<current_parent->name<<": "<<std::endl;
+                if (this->verbose) std::cout<<"Setting stored value in"<<" "<<current_parent->name<<": "<<std::endl;
                 current_parent->set_func(val.second);
                 current_parent->stored_object = val.second;
-                current_parent->stored_object.print_paramval(std::cout);
-                std::cout << std::endl;
+                if (this->verbose) current_parent->stored_object.print_paramval(std::cout);
+                if (this->verbose) std::cout << std::endl;
                 }
             }
         }
@@ -617,17 +617,17 @@ void ParserTree::parseParameter(Node* parent, const std::string& param) {
                     if (parent->children[i]->name == key){
                         auto val = ParamValue::make_ParamValue_from_string(parent->children[i]->type, value);
                         if (val.first && parent->children[i]->set_func != nullptr){
-                            std::cout<<"Setting stored value in"<<" "<<parent->children[i]->name<<": "<<std::endl;
+                            if (this->verbose) std::cout<<"Setting stored value in"<<" "<<parent->children[i]->name<<": "<<std::endl;
                             parent->children[i]->set_func(val.second);
                             parent->children[i]->stored_object = val.second;
-                            parent->children[i]->stored_object.print_paramval(std::cout);
-                            std::cout << std::endl;
+                            if (this->verbose) parent->children[i]->stored_object.print_paramval(std::cout);
+                            if (this->verbose) std::cout << std::endl;
                         }
                     else if(val.first){
-                            std::cout<<"Setting stored value in"<<" "<<parent->children[i]->name<<": "<<std::endl;
+                            if (this->verbose) std::cout<<"Setting stored value in"<<" "<<parent->children[i]->name<<": "<<std::endl;
                             parent->children[i]->stored_object = val.second;
-                            parent->children[i]->stored_object.print_paramval(std::cout);
-                            std::cout << std::endl;
+                            if (this->verbose) parent->children[i]->stored_object.print_paramval(std::cout);
+                            if (this->verbose) std::cout << std::endl;
                     }
                     }
                 }
